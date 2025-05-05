@@ -1,0 +1,214 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Boucherie Block W05 Bold";
+  background-color: #211C3B;
+  min-height: 100vh;
+  color: white;
+}
+
+/* HEADER */
+header.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2d9471;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+nav.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* Sobre nós */
+    .sobre-nos {
+  background-color: #2d9471;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.container-sobre {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-sobre {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.texto-sobre {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+/* TÍTULO */
+.titulo {
+  margin-top: 140px;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* SUBTITULO */
+.subtitulo{
+  text-align: center;
+  font-size: 1.5rem;
+  color: darkgray;
+}
+
+/* CARROSSEL */
+.carrossel-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carrossel-slide {
+  display: flex;
+  width: 900px; /* largura fixa para as imagens */
+  overflow: hidden;
+}
+
+.carrossel-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carrossel-slide-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.carrossel-btn {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px 15px;
+  border-radius: 50%;
+  pointer-events: all;
+  transition: background-color 0.3s ease;
+}
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+    /* Estilização das exclusividades */
+    .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem auto;
+    padding: 2rem;
+    max-width: 1200px;
+  }
+
+  .card-agamemnon {
+    background-color: #2d9471;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .card-agamemnon:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-agamemnon img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-caption {
+    background-color: #211C3B;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Boucherie Block W05 Bold", sans-serif;
+  }
+
+
+    /* Estilização do rodapé */
+    .rodape {
+  background-color: #2d9471;
+  padding: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.rodape-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rodape-logo img {
+  height: 50px;
+}
+
+.rodape-info p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.rodape-redes a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.rodape-redes a:hover {
+  color: #000;
+}

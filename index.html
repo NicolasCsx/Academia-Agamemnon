@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> AGAMEMNON HOME </title>
+
+  <link href="https://db.onlinewebfonts.com/c/d6cce52ffda97a2370a12e85836bfc11?family=Boucherie+Block+W05+Bold" rel="stylesheet" type="text/css" />
+  <link href="styles/index.css" rel="stylesheet" type="text/css"/>
+  <link href
+</head>
+
+<body>
+<!-- Menu da página -->
+<header class="header">
+  <a href="Home Agamemnon - Index.html" class="Logo"><img src="assets/Logo.png" alt="Logo" height="40"></a>
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="Planos.html">PLANOS</a></li>
+      <li><a href="Área do aluno.html">ÁREA DO ALUNO</a></li>
+      <li><a href="Login.html"> 👤 ENTRAR OU REGISTRAR-SE</a></li>
+    </ul>
+  </nav>
+</header>
+
+<br>
+<br>
+<h2 class="titulo"> TREINE NAS MELHORES ACADEMIAS DO BRASIL! </h2>
+<br>
+<h3 class="subtitulo"> VENHA FAZER PARTE DO NOSSO TIME DE CAMPEÕES </h3>
+
+<!-- Agamemnon -->
+<section class="sobre-nos">
+  <div class="container-sobre">
+    <h2 class="titulo-sobre"> AGAMEMNON </h2>
+    <p class="texto-sobre">
+      A escolha do nome Agamemnon faz referência ao lendário herói grego, conhecido por sua força, coragem e liderança. Assim como Agamemnon liderava batalhas e superava desafios<br> <br>
+
+      A academia visa inspirar seus membros a superar limites e alcançar excelência, tanto física quanto mentalmente. O nome simboliza a busca pela superação contínua e pela conquista de resultados extraordinários.
+          </p>
+  </div>
+</section>
+
+<!-- Título da Página -->
+<h2 class="titulo">NOSSAS ACADEMIAS</h2>
+
+<!-- Carrossel de Imagens -->
+<div class="carrossel-container">
+  <div class="carrossel-slide">
+    <div class="carrossel-slide-inner" id="slide">
+      <img src="assets/img carrossel 1.jpeg" alt="Imagem 1 - Academia Agamemnon">
+      <img src="assets/img carrossel 2.jpeg" alt="Imagem 2 - Academia Agamemnon">
+      <img src="assets/img carrossel 3.jpeg" alt="Imagem 3 - Academia Agamemnon">
+    </div>
+  </div>
+
+  <div class="carrossel-nav">
+    <button class="carrossel-btn" onclick="prevSlide()">‹</button>
+    <button class="carrossel-btn" onclick="nextSlide()">›</button>
+  </div>
+</div>
+      <BR>
+      <h2 class="titulo">EXCLUSIVIDADES AGAMEMNON</h2>
+
+      <div class="cards-container">
+        <div class="card-agamemnon">
+          <img src="assets/equipamento-agamemnon.jpg" alt="Equipamentos de alto padrão">
+          <div class="card-caption">Equipamentos de alta qualidade</div>
+        </div>
+      
+        <div class="card-agamemnon">
+          <img src="assets/sala-livre-agamemnon.jpg" alt="Salas exclusivas de aulas coletivas">
+          <div class="card-caption">Salas exclusivas de aulas ritmicas</div>
+        </div>
+      
+        <div class="card-agamemnon">
+          <img src="assets/equipamentos-agamemnon.jpg" alt="Áreas de musculação e cárdio">
+          <div class="card-caption">Áreas de musculação e cárdio</div>
+        </div>
+      </div>
+
+<!-- Rodapé com informções -->
+<footer class="rodape">
+  <div class="rodape-container">
+    <div class="rodape-logo">
+      <img src="assets/Logo.png" alt="Logo Agamemnon" height="50">
+    </div>
+
+    <div class="rodape-info">
+      <p>© 2025 Agamemnon Academia. Todos os direitos reservados.</p>
+      <p>Rua dos Heróis, 132 - Olimpo, Grécia</p>
+      <p>Nícolas Cavalcante Santos - Projeto Integrador - SENAC.</p>
+    </div>
+
+    <div class="rodape-redes">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="assets/instagram-icon.svg" alt="Instagram" class="icone-rede" height="20" width="20">
+        Instagram
+      </a>
+      <a href="https://www.whatsapp.com/" target="_blank">
+        <img src="assets/whatsapp-icon.svg" alt="Whatsapp" class="icone-rede" height="20" width="20">
+        Whatsapp
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img src="assets/youtube-icon.png" alt="YouTube" class="icone-rede" height="20" width="20">
+        YouTube
+      </a>
+    </div>
+
+    <div class="rodape-frase">
+      <p style="font-style: italic; margin-top: 1rem;">
+        “Η δύναμη είναι απλώς μια δύναμη. Χωρίς σοφία, είναι σαv ένα όπλο χωρίς στόχο” — A força é só um poder. Sem sabedoria, é como uma arma sem alvo.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Script Js para o carrossel de imagens -->
+<script>
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const slide = document.getElementById('slide');
+    const totalSlides = slide.children.length;
+    if (index >= totalSlides) index = 0;
+    if (index < 0) index = totalSlides - 1;
+    currentIndex = index;
+    slide.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(currentIndex + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentIndex - 1);
+  }
+</script>
+
+</body>
+</html>
