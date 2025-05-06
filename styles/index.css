@@ -65,6 +65,132 @@ nav.nav {
 }
 
 
+/* Estilização da area de Login*/
+/* Estilização da area de Login*/
+.titulo {
+  margin-top: 140px;
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+section.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.form-box {
+  background-color: #163e64;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  display: none;
+  opacity: 0.7;
+  transform: scale(0.97);
+  transition: all 0.3s ease;
+}
+
+.form-box.active {
+  display: block;
+  opacity: 1;
+  transform: scale(1.03);
+  border: 2px solid #ffffff;
+}
+
+.form-box h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #2d9471;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Boucherie Block W05 Bold";
+}
+
+.form-group input::placeholder {
+  color: #e0e0e0;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ffffff;
+  box-shadow: 0 0 5px #ffffff;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #ffffff;
+  color: #163e64;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Boucherie Block W05 Bold";
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #e0e0e0;
+}
+    /* Responsividade */
+    @media (max-width: 1024px) {
+      .auth-container {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .auth-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .form-box {
+        max-width: 90%;
+        padding: 1.5rem;
+      }
+    }
+
+
+
 /* TÍTULO */
 .titulo {
   margin-top: 140px;
@@ -171,6 +297,88 @@ nav.nav {
     font-family: "Boucherie Block W05 Bold", sans-serif;
   }
 
+
+/* Estilização da area de planos*/
+    /* TÍTULO DOS PLANOS */
+    .titulo-planos {
+      margin-top: 110px;
+      text-align: center;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    /* Estilização da area de planos*/
+    .main-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      min-height: 100vh;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .card-plano {
+      width: 300px;
+      background: #2d9471;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+    .card-plano:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+    .card-topo {
+      background: #2d9471;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .card-base {
+      background: #211C3B;
+      padding: 20px;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .badge {
+      background-color: #2d9471;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .preco-texto {
+      font-size: 1rem;
+      text-align: center;
+    }
+    .preco-valor {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    @media (max-width: 1000px) {
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
 
     /* Estilização do rodapé */
     .rodape {

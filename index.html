@@ -7,25 +7,26 @@
 
   <link href="https://db.onlinewebfonts.com/c/d6cce52ffda97a2370a12e85836bfc11?family=Boucherie+Block+W05+Bold" rel="stylesheet" type="text/css" />
   <link href="styles/index.css" rel="stylesheet" type="text/css"/>
-  <link href
 </head>
+
 
 <body>
 <!-- Menu da página -->
 <header class="header">
-  <a href="Home Agamemnon - Index.html" class="Logo"><img src="assets/Logo.png" alt="Logo" height="40"></a>
+  <a href="#section0" class="Logo"><img src="assets/Logo.png" alt="Logo" height="40"></a>
   <nav class="nav">
     <ul class="nav-list">
-      <li><a href="Planos.html">PLANOS</a></li>
-      <li><a href="Área do aluno.html">ÁREA DO ALUNO</a></li>
-      <li><a href="Login.html"> 👤 ENTRAR OU REGISTRAR-SE</a></li>
+      <li><a href="#section1"> PLANOS </a></li>
+      <li><a href="#section3"> ACADEMIAS </a></li>
+      <li><a href="#section4"> ÁREA DO ALUNO </a></li>
+      <li><a href="#section2"> 👤 ENTRAR OU REGISTRAR-SE </a></li>
     </ul>
   </nav>
 </header>
 
 <br>
 <br>
-<h2 class="titulo"> TREINE NAS MELHORES ACADEMIAS DO BRASIL! </h2>
+<h2 class="titulo" id="section0"> TREINE NAS MELHORES ACADEMIAS DO BRASIL! </h2>
 <br>
 <h3 class="subtitulo"> VENHA FAZER PARTE DO NOSSO TIME DE CAMPEÕES </h3>
 
@@ -41,8 +42,57 @@
   </div>
 </section>
 
+<!-- Área de Login e Cadastro-->
+<h2 class="titulo" id="section2"> FAÇA SEU LOGIN OU CADASTRO </h2>
+
+<main class="fundo">
+  <section class="auth-container">
+    <div class="form-box active" id="login-box">
+      <h2> LOGIN </h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Usuário</label>
+          <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="login-button">ENTRAR</button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">
+        Ainda não possui login?
+        <a href="#" onclick="toggleForms('register')">Cadastrar-se</a>
+      </p>
+    </div>
+
+    <div class="form-box" id="register-box">
+      <h2>CADASTRE-SE</h2>
+      <form>
+        <div class="form-group">
+          <label for="new-user">Usuário</label>
+          <input type="text" id="new-user" name="new-user" placeholder="Escolha um usuário" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="new-password">Senha</label>
+          <input type="password" id="new-password" name="new-password" placeholder="Crie uma senha" required>
+        </div>
+        <button type="submit" class="login-button"> CADASTRAR </button>
+      </form>
+      <p style="text-align:center; margin-top:1rem;">
+        Já possui uma conta?
+        <a href="#" onclick="toggleForms('login')"> Fazer login </a>
+      </p>
+    </div>
+  </section>
+</main>
+
 <!-- Título da Página -->
-<h2 class="titulo">NOSSAS ACADEMIAS</h2>
+<h2 class="titulo" id="section3">NOSSAS ACADEMIAS</h2>
 
 <!-- Carrossel de Imagens -->
 <div class="carrossel-container">
@@ -59,8 +109,8 @@
     <button class="carrossel-btn" onclick="nextSlide()">›</button>
   </div>
 </div>
-      <BR>
-      <h2 class="titulo">EXCLUSIVIDADES AGAMEMNON</h2>
+<br>
+  <h2 class="titulo">EXCLUSIVIDADES AGAMEMNON</h2>
 
       <div class="cards-container">
         <div class="card-agamemnon">
@@ -78,6 +128,67 @@
           <div class="card-caption">Áreas de musculação e cárdio</div>
         </div>
       </div>
+
+      <!-- Area de planos -->
+      <h2 class="titulo-planos" id="section1"> CONHEÇA OS PLANOS AGAMEMNON </h2>
+
+      <!-- CONTEÚDO -->
+      <main class="main-content">
+        <div class="cards-container">
+      
+          <!-- Card 1-->
+          <div class="card-plano">
+            <div class="card-topo">
+              PLANO MAIS ECONÔMICO<br>
+              PARA VOCÊ SE EXERCITAR<br>
+              QUANDO E ONDE QUISER NA<br>
+              ACADEMIA QUE ESCOLHER!
+            </div>
+            <div class="card-base">
+              <div class="badge">MARCIAL</div>
+              <div class="preco-texto">A PARTIR DE:</div>
+              <div class="preco-valor">R$ 99,90</div>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="card-plano">
+            <div class="card-topo">
+              PLANO MAIS VANTAJOSO<br> 
+              TREINE EM QUALQUER<br> 
+              LUGAR DO BRASIL SÃO MAIS<br>
+              DE 1.900 UNIDADES!
+            </div>
+            <div class="card-base">
+              <div class="badge">GUERRA</div>
+              <div class="preco-texto">A PARTIR DE:</div>
+              <div class="preco-valor">R$ 149,90</div>
+            </div>
+          </div>
+      
+          <!-- Card 3-->
+          <div class="card-plano">
+            <div class="card-topo">
+              PLANO BÉLICO<br>
+              COM ACESSO ILIMITADO<br>
+              ÀS MELHORES ACADEMIAS<br>
+              E BENEFÍCIOS EXCLUSIVOS!
+            </div>
+            <div class="card-base">
+              <div class="badge">BÉLICO</div>
+              <div class="preco-texto">A PARTIR DE:</div>
+              <div class="preco-valor">R$ 119,90</div>
+            </div>
+          </div>
+      
+        </div>
+      </main>
+ <br>
+ <br>
+
+  <h2 class="titulo" id="section4">ÁREA EXCLUSIVA DO CLIENTE AGAMEMNON</h2>
+  <br>
+  <h3 class="subtitulo"> AQUI VOCÊ TEM ACESSO A OFERTAS EXCLUSIVAS </h3>
 
 <!-- Rodapé com informções -->
 <footer class="rodape">
@@ -117,24 +228,85 @@
 
 <!-- Script Js para o carrossel de imagens -->
 <script>
-  let currentIndex = 0;
+ let currentSlide = 0;
 
-  function showSlide(index) {
-    const slide = document.getElementById('slide');
-    const totalSlides = slide.children.length;
-    if (index >= totalSlides) index = 0;
-    if (index < 0) index = totalSlides - 1;
-    currentIndex = index;
-    slide.style.transform = `translateX(-${index * 100}%)`;
+function showSlide(index) {
+  const slide = document.getElementById('slide');
+  const totalSlides = slide.children.length;
+  if (index >= totalSlides) {
+    currentSlide = 0;
+  } else if (index < 0) {
+    currentSlide = totalSlides - 1;
+  } else {
+    currentSlide = index;
   }
 
-  function nextSlide() {
-    showSlide(currentIndex + 1);
+  const offset = -currentSlide * 100;
+  slide.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+// Inicializa com o primeiro slide
+document.addEventListener('DOMContentLoaded', () => {
+  const slide = document.getElementById('slide');
+  slide.style.display = 'flex';
+  slide.style.transition = 'transform 0.5s ease-in-out';
+  Array.from(slide.children).forEach(child => {
+    child.style.minWidth = '100%';
+    child.style.flexShrink = '0';
+  });
+  showSlide(currentSlide);
+});
+
+</script>
+
+<script>
+  // Script Js para o login - Alterna entre os formulários de login e cadastro
+  function toggleForms(formType) {
+    const loginBox = document.getElementById("login-box");
+    const registerBox = document.getElementById("register-box");
+
+    if (formType === 'register') {
+      loginBox.classList.remove("active");
+      registerBox.classList.add("active");
+    } else {
+      registerBox.classList.remove("active");
+      loginBox.classList.add("active");
+    }
   }
 
-  function prevSlide() {
-    showSlide(currentIndex - 1);
-  }
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const loginForm = document.querySelector("#login-box form");
+    const registerForm = document.querySelector("#register-box form");
+
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+  // Simule a verificação de login 
+  alert(`Login de ${username} realizado com sucesso!`);
+   });
+
+  registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const newUser = document.getElementById("new-user").value;
+    const email = document.getElementById("email").value;
+    const newPassword = document.getElementById("new-password").value;
+
+  // Simule o cadastro 
+    alert(`Usuário ${newUser} cadastrado com sucesso!`);
+    toggleForms('login'); // Retorna ao login após cadastro
+    });
+  });
 </script>
 
 </body>
